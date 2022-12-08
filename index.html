@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobha Hartland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <div class="header-logo_wrapper">
+                    <img class="header-logo" src="./images/logo.svg" alt="logo">
+                </div>
+                <div class="header-request">
+                    <button class="button callback-button">
+                        Request a call back
+                    </button>
+                </div>
+            </div>
+            <div class="burger-wrapper">
+                <a href="tel:5550004444" class="header-call"><i class="fa-solid fa-phone"></i> (555) 000-4444</a>
+                <div class="burger-menu-wrapper">
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-list-item"><a href="#" class="mobile-menu-link">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="mobile-menu-list-item"><a href="#" class="mobile-menu-link">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="mobile-menu-list-item"><a href="#" class="mobile-menu-link">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="mobile-menu-list-item"><a href="#" class="mobile-menu-link">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="mobile-menu-list-item"><a href="tel:5550004444" class="header-call"><i class="fa-solid fa-phone"></i> (555) 000-4444</a></li>
+                    <li class="mobile-menu-list-item">
+                        <div class="header-request">
+                            <button class="button callback-button">
+                                Request a call back
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-form">
+            <div class="footer-form">
+                <div class="form-inner-wrapper">
+                    <p class="close-wrapper">
+                        <i class="fa-solid fa-xmark"></i>
+                    </p>
+                    <h3 class="form-title">
+                        Register your interest
+                    </h3>
+                    <form class="form" action="feedback.php" method='POST' autocomplete="off">
+                        <select class="select" name="prefix" id="prefix">
+                            <option value="Mr" class="option" selected>Mr</option>
+                            <option value="Mrs" class="option">Mrs</option>
+                            <option value="none" class="option"> </option>
+                        </select>
+                        <input type="text" class="input" name="name" placeholder="Name">
+                        <input type="text" class="input" name="time" placeholder="Best time to call">
+                        <div class="form-group">
+                            <div class="dropdown">
+                                <div class="dropdown__button">
+                                    <img class="flag" src="./images/flag.png" alt="flag">
+                                </div>
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" data-value="dubai"><img class="flag" src="./images/flag.png" alt="flag"></li>
+                                    <li class="dropdown__list-item" data-value="dubai"><img class="flag" src="./images/flag.png" alt="flag"></li>
+                                </ul>
+                                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
+                            <input type="tel" name="phoneNumber" class="phone-input" placeholder="Phone-Number">
+                        </div>
+                        <input type="email" class="input" name="email" placeholder="Email">
+                        <div class="checkbox-wrapper">
+                            <input id="news" type="checkbox" class="checkbox" checked>
+                            <label title="Check" for="news" class="label">I`d like to hear about news and offers</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input id="news" type="checkbox" class="checkbox">
+                            <label title="Check" for="news" class="label">I`ve read and agree to the <a class="privacy" href="#">Privacy Policy</a></label>
+                        </div>
+                        <input value="Request callback" name="send" type="submit" class="form-button"></input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="main-register">
+                <div class="register-location-wrapper">
+                    <h1 class="location-title">
+                        Sobha Hartland
+                    </h1>
+                    <p class="register-location">
+                        <i class="fa-solid fa-location-dot"></i> Location: Meydan
+                    </p>
+                </div>
+                <div class="register-description-wrapper">
+                    <div class="register-description">
+                        <div class="description-item-wrapper">
+                            <div class="description-item-icon">
+                                <img class="description-icon" src="./images/dollar-hand.svg" alt="hand">
+                            </div>
+                            <div class="description-item-content">
+                                <p class="description-item-title">
+                                    70 - 30 
+                                </p>
+                                <p class="description-item-text">
+                                    Payment plan
+                                </p>
+                            </div>
+                        </div>
+                        <div class="description-item-wrapper">
+                            <div class="description-item-icon">
+                                <img class="description-icon" src="./images/keys.svg" alt="keys">
+                            </div>
+                            <div class="description-item-content">
+                                <p class="description-item-title">
+                                    Completed
+                                </p>
+                                <p class="description-item-text">
+                                    Project status
+                                </p>
+                            </div>
+                        </div>
+                        <div class="description-item-wrapper">
+                            <div class="description-item-icon">
+                                <img class="description-icon" src="./images/money.svg" alt="money">
+                            </div>
+                            <div class="description-item-content">
+                                <p class="description-item-title">
+                                    AED 800,000
+                                </p>
+                                <p class="description-item-text">
+                                    Starting price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register-action">
+                        <button class="register-action-button button">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="vip-wrapper">
+                <div class="vip-image-wrapper">
+                    <img class="vip-image" src="./images/register-now.png" alt="register-now">
+                </div>
+                <div class="vip-text-wrapper">
+                    <div class="vip-title">
+                        <span>Register Now</span> to get VIP access and secure the best units
+                    </div>
+                    <ul class="vip-list">
+                        <div>
+                            <li class="vip-list-item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, 
+                            </li>
+                            <li class="vip-list-item">
+                                Lorem ipsum dolor sit tetur adipiscing elit. Pellentesque auctor pellentesque diam, 
+                            </li>
+                            <li class="vip-list-item">
+                                Lorem t amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, 
+                            </li>
+                        </div>
+                        <div>
+                            <li class="vip-list-item">
+                                Lorem ipsum dolor sit t, consectetur adipiscing elit. Pellentesque 
+                            </li>
+                            <li class="vip-list-item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, 
+                            </li>
+                        </div>
+                    </ul>
+                    <button class="vip-button button">
+                        Get Pricing & Payment Terms
+                    </button>
+                </div>
+            </div>
+            <div class="reasons-wrapper">
+                <div class="reasons-head">
+                    <h2 class="reasons-title">
+                        A few reasons to Buy this property
+                    </h2>
+                    <p class="reasons-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat.
+                    </p>
+                </div>
+                <div class="reasons-cards-wrapper">
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                    <div class="reasons-card">
+                        <div class="reasons-image-wrapper">
+                            <img class="reasons-image" src="./images/money.svg" alt="money">
+                        </div>
+                        <p class="reasons-name">
+                            Amenities
+                        </p>
+                        <div class="reasons-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <div class="video-inner">
+                    <div class="reasons-head">
+                        <h2 class="reasons-title">
+                            Featured Properties in: <span class="video-location">Dubai</span>
+                        </h2>
+                        <p class="reasons-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat.
+                        </p>
+                    </div>
+                    <div class="video-content">
+                        <div class="video-content-wrapper">
+                            <iframe src="https://www.youtube.com/embed/65anMb-_6cc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-text">
+                            <div class="video-text-item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat. 
+                            </div>
+                            <div class="video-text-item">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-wrapper">
+                        <button class="download-item download-button button">
+                            <span class="download-icon-wrapper">
+                                <img class="download-icon" src="./images/download.svg" alt="download">
+                            </span>
+                            Download Floor Plan
+                        </button>
+                        <button class="download-item download-button button">
+                            Request availability
+                        </button>
+                        <button class="download-item download-button button">
+                            <span class="download-icon-wrapper">
+                                <img class="download-icon" src="./images/download.svg" alt="download">
+                            </span>
+                            Download brochure
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-wrapper">
+                <h2 class="payment-title">
+                    Attractive Post-Handover Payment Plan
+                </h2>
+                <div class="payment-cards-wrapper">
+                    <div class="payment-card">
+                        <p class="payment-text">
+                            Down Payment
+                        </p>
+                        <p class="payment-persent">
+                            5%
+                        </p>
+                    </div>
+                    <div class="payment-card">
+                        <p class="payment-text">
+                            Down Payment
+                        </p>
+                        <p class="payment-persent">
+                            55%
+                        </p>
+                    </div>
+                    <div class="payment-card">
+                        <p class="payment-text">
+                            Down Payment
+                        </p>
+                        <p class="payment-persent">
+                            10%
+                        </p>
+                    </div>
+                    <div class="payment-card">
+                        <p class="payment-text">
+                            Down Payment
+                        </p>
+                        <p class="payment-persent">
+                            30%
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="nearby-wrapper">
+                <div class="nearby-head">
+                    <h2 class="nearby-title">
+                        Nearby
+                    </h2>
+                    <p class="nearby-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam
+                    </p>
+                </div>
+                <div class="nearby-cards-wrapper">
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                    <div class="nearby-card">
+                        <div class="nearby-icon-wrapper">
+                            <img class="nearby-icon" src="./images/sun-umbrella.svg" alt="sun-umbrella">
+                        </div>
+                        <p class="nearby-card-name">
+                            Beach
+                        </p>
+                        <p class="nearby-card-submane">
+                            For sun, sand and sea breeze
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-wrapper">
+                <div class="reasons-head">
+                    <h2 class="reasons-title">
+                        Location
+                    </h2>
+                    <p class="reasons-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="vip-wrapper">
+                    <div class="vip-image-wrapper">
+                        <img class="vip-image" src="./images/location.png" alt="location">
+                    </div>
+                    <div class="vip-text-wrapper">
+                        <div class="vip-title">
+                            <span>Register Now</span> to get VIP access and secure the best units
+                        </div>
+                        <p class="location-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam,  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat. 
+                        </p>
+                        <div class="location-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat
+                        </div>
+                        <button class="vip-button button">
+                            View on google maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="property-wrapper">
+                <div class="property-inner">
+                    <div class="reasons-head">
+                        <h2 class="reasons-title">
+                            Interior and exterior property images
+                        </h2>
+                        <p class="reasons-subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor pellentesque diam, ut vestibulum sem tempus eu. Vestibulum eget justo erat.
+                        </p>
+                    </div>
+                    <div class="gallery-wrapper">
+                        <div class="gallery-main grid-1">
+                            <div class="gallery-main-image-wrapper">
+                                <img class="gallery-main-image" src="/images/interior1.png" alt="gallery-main-image">
+                            </div>
+                            <p class="gallery-text">
+                                Deluxe Room
+                            </p>
+                        </div>
+                        <div class="gallery-item grid-2">
+                            <div class="gallery-item-image-wrapper">
+                                <img class="gallery-item-image" src="./images/interior2.png" alt="ga">
+                            </div>
+                            <p class="gallery-item-text">
+                                Deluxe Room
+                            </p>
+                        </div>
+                        <div class="gallery-item grid-3">
+                            <div class="gallery-item-image-wrapper">
+                                <img class="gallery-item-image" src="./images/interior3.png" alt="ga">
+                            </div>
+                            <p class="gallery-item-text">
+                                Deluxe Room
+                            </p>
+                        </div>
+                        <div class="gallery-item grid-4">
+                            <div class="gallery-item-image-wrapper">
+                                <img class="gallery-item-image" src="./images/interior4.png" alt="ga">
+                            </div>
+                            <p class="gallery-item-text">
+                                Deluxe Room
+                            </p>
+                        </div>
+                        <div class="gallery-item grid-5">
+                            <div class="gallery-item-image-wrapper">
+                                <img class="gallery-item-image" src="./images/interior5.png" alt="ga">
+                            </div>
+                            <p class="gallery-item-text">
+                                Deluxe Room
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="community-wrapper">
+                <div class="reasons-head">
+                    <h2 class="reasons-title">
+                        Community Projects
+                    </h2>
+                    <p class="reasons-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="community-projects-wrapper">
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community2.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community1.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community3.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community2.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community1.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                    <div class="community-project">
+                        <div class="project-image-wrapper">
+                            <img class="project-image" src="./images/community3.png" alt="community-image">
+                        </div>
+                        <p class="project-name">
+                            Golf Place Villas
+                        </p>
+                        <p class="project-location">
+                            <i class="fa-solid fa-location-dot"></i> Dubai Hills Estate
+                        </p>
+                        <p class="project-price">
+                            420,000 AED
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-form-wrapper">
+                <div class="footer-form-content">
+                    <p class="form-content-title">
+                        Fill in your Details & Get VIP Access to the Latest Market Updates
+                    </p>
+                    <p class="form-content-text">
+                        Join our exclusive memebers to get the latest updates about dubai’s real estate market and be the first to know about all the new launches
+                    </p>
+                    <div class="form-content-person-wrapper">
+                        <div class="person-image-wrapper">
+                            <img class="person-image" src="./images/callme.png" alt="person-image">
+                        </div>
+                        <div class="person-text-wrapper">
+                            <p class="person-text">
+                                Call one of our consultants for assistance
+                            </p>
+                            <a href="tel:+9715550004444" class="person-phone">+971 555 000 4444</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-form">
+                    <div class="form-inner-wrapper">
+                        <p class="close-wrapper">
+                            <i class="fa-solid fa-xmark"></i>
+                        </p>
+                        <h3 class="form-title">
+                            Register your interest
+                        </h3>
+                        <form class="form" action="feedback.php" method='POST' autocomplete="off">
+                            <select class="select" name="prefix" id="prefix">
+                                <option value="Mr" class="option" selected>Mr</option>
+                                <option value="Mrs" class="option">Mrs</option>
+                                <option value="none" class="option"> </option>
+                            </select>
+                            <input type="text" class="input" name="name" placeholder="Name">
+                            <input type="text" class="input" name="time" placeholder="Best time to call">
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <div class="dropdown__button">
+                                        <img class="flag" src="./images/flag.png" alt="flag">
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__list-item" data-value="dubai"><img class="flag" src="./images/flag.png" alt="flag"></li>
+                                        <li class="dropdown__list-item" data-value="dubai"><img class="flag" src="./images/flag.png" alt="flag"></li>
+                                    </ul>
+                                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </div>
+                                <input type="tel" class="phone-input" name="phoneNumber" placeholder="Phone-Number">
+                            </div>
+                            <input type="email" class="input" name="email" placeholder="Email">
+                            <div class="checkboxes-wrapper">
+                                <div class="checkbox-wrapper">
+                                    <input id="news" type="checkbox" class="checkbox" checked>
+                                    <label title="Check" for="news" class="label">I`d like to hear about news and offers</label>
+                                </div>
+                                <div class="checkbox-wrapper">
+                                    <input id="news" type="checkbox" class="checkbox">
+                                    <label title="Check" for="news" class="label">I`ve read and agree to the <a class="privacy" href="#">Privacy Policy</a></label>
+                                </div>
+                            </div>
+                            <input value="Request callback" name="send" type="submit" class="form-button"></input>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copiright">
+                <span>© Copyright 2022, All Rights Reserved.</span>
+            </div>
+            <div class="mobile-footer">
+                <div class="mobile-footer-el button">
+                    <div class="el-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="el-name">
+                        Enquire
+                    </p>
+                </div>
+                <a href="tel:5550004444" class="mobile-footer-el">
+                    <div class="el-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <p class="el-name">
+                        Call
+                    </p>
+                </a>
+                <a href="#" class="mobile-footer-el">
+                    <div class="el-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <p class="el-name">
+                        WhatsApp
+                    </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://kit.fontawesome.com/e50b17d262.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
